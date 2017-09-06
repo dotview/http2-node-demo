@@ -15,7 +15,6 @@ openssl rsa -passin pass:123456 -in key/server.pass.key -out key/server.key
 ```
 openssl req -new -key key/server.key -out key/server.csr 
 ```
-``
 
 3. 生成证书
 ```
@@ -110,7 +109,7 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 2. 除非客户端确定需要，否则不要推送，浏览器缓存的资源不要再推送。
 3. 不要把客户端需要的所有资源的推送，根据实际情况按需推送。
 
-###　参考资源
+### 参考资源
 1. [HTTP/2 Push: The details](https://calendar.perfplanet.com/2016/http2-push-the-details/)
 2. [HTTP/2 DEMO](https://http2.akamai.com/demo)
 3. [HTTP/2 explained](https://bagder.gitbooks.io/http2-explained/zh/)
